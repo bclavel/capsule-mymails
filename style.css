@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  background-color: #f6f7fb
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans';
+  margin-top: 40px;
+}
+
+#main-messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans';
+}
+
+.toolbar {
+  background-color: white;
+  border: solid 1px #dfdfdf;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  width: 50%;
+}
+
+.toolbar-icon {
+  width: 20px;
+  margin: 0 5px 0 16px;
+}
+
+.toolbar-sort {
+  width: 20px;
+  margin: 0 16px 0 5px;
+}
+
+.toolbar-text {
+  font-size: 12px;
+  color: #000000;
+  margin: 10px 0 10px 0
+}
+
+/* .toolbar-text a {
+  font-size: 12px;
+  color: #000000;
+} */
+
+.toolbar-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.toolbar-left a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000000;
+}
+
+.toolbar-left a:hover {
+  text-decoration: none;
+}
+
+.toolbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: right;
+}
+
+.toolbar-right a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000000;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  border-top: solid 1px;
+  border-right: solid 1px;
+  border-left: solid 1px;
+  border-color: #dfdfdf;
+  width: 50%;
+  font-family: 'Open Sans';
+}
+
+.last {
+  border-bottom: 1px solid #dfdfdf
+}
+
+#main h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+
+.texte-box {
+  font-size: 14px;
+  margin: 5px 0 20px 0;
+}
+
+.avatar {
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 15px 0 20px;
+}
+
+.add {
+  width: 15px;
+  margin: 20px 20px 5px 20px;
+}
+
+.trash {
+  width: 15px;
+  margin: 5px 20px 20px 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.texte-counter {
+  font-size: 14px;
+  margin: 10px 0 10px 15px;
+}
+
+.figure-counter {
+  font-size: 14px;
+  margin: 20px 0 20px 5px;
+  border: solid 1px #dfdfdf;
+  border-radius: 50%;
+  background: radial-gradient(#d2d7dd, #57595b);
+  color: black;
+  width: 20px;
+  text-align: center;
+}
+
+#counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.counterbar {
+  background-color: white;
+  border-top: solid 1px #dfdfdf;
+  border-left: solid 1px #dfdfdf;
+  border-right: solid 1px #dfdfdf;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0px;
+  width: 50%;
+}
+
+.newMessage {
+  background-color: #deeaf7;
+}
