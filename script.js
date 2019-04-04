@@ -31,7 +31,9 @@ updateTrash()
 // Fonction qui vient remplacer le contenu du paragraphe cible par le contenu du champ
 function updateMessage() {
   document.getElementById('targetMessage').innerHTML = document.getElementById('message-field').value;
+  document.getElementById('message-field').value = ""
   document.getElementById('noel').innerHTML = document.getElementById('name-field').value;
+  document.getElementById('name-field').value = ""
 };
 
 // Ecoute les clics sur le bouton Ajouter et créé un nouveau bloc avec le contenu du message
