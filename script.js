@@ -45,8 +45,8 @@ function newContent() {
 document.getElementById('new').addEventListener("click",
   function() {
     newContent();
-    console.log('new !')
-    console.log(document.getElementsByClassName('trash').length);
+    // console.log('new !')
+    // console.log(document.getElementsByClassName('trash').length);
     totalMessages = document.getElementsByClassName('box').length;
     updateCounter()
     updateTrash()
