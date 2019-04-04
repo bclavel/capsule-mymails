@@ -15,18 +15,13 @@ function updateTrash() {
     document.getElementsByClassName('trash')[i].addEventListener("click",
      function(){
        this.parentNode.parentNode.remove();
-       console.log('ça dégage !', this);
        totalMessages = document.getElementsByClassName('box').length
-       console.log(totalMessages)
        updateCounter()
      }
     );
   };
 };
 updateTrash()
-
-// Définition du contenu du champ message
-// var messagePerso = document.getElementById('message-field').value;
 
 // Fonction qui vient remplacer le contenu du paragraphe cible par le contenu du champ
 function updateMessage() {
@@ -43,7 +38,6 @@ function () {
   // messagePerso = document.getElementById('message-field').value;
   totalMessages = document.getElementsByClassName('box').length;
   updateMessage()
-  console.log(document.getElementById('targetName'));
   updateCounter()
   updateTrash()
   }
@@ -68,6 +62,5 @@ document.getElementById('new').addEventListener("click",
     totalMessages = document.getElementsByClassName('box').length;
     updateCounter()
     updateTrash()
-    console.log(totalMessages);
   }
 );
