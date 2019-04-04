@@ -109,6 +109,7 @@ body {
 .texte-box {
   font-size: 14px;
   margin: 5px 0 20px 0;
+  min-width: 610px;
 }
 
 .avatar {
@@ -141,7 +142,7 @@ body {
   margin: 20px 0 20px 5px;
   border: solid 1px #dfdfdf;
   border-radius: 50%;
-  background: radial-gradient(#d2d7dd, #57595b);
+  background-color: #deeaf7;
   color: black;
   width: 20px;
   text-align: center;
@@ -169,4 +170,48 @@ body {
 
 .newMessage {
   background-color: #deeaf7;
+}
+
+.form {
+  background-color: white;
+  border-top: solid 1px #dfdfdf;
+  border-left: solid 1px #dfdfdf;
+  border-right: solid 1px #dfdfdf;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 15px 0;
+  width: 50%;
+}
+
+#fields {
+  width: 60%;
+  text-align: center;
+}
+
+#fields input {
+  width: 100%;
+}
+
+#message-field, #name-field {
+  width: 60%;
+  height: 20px;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+#button {
+  margin-left: 20px;
+  color: #4286f4;
+  background-color: white;
+  border: solid 1px #4286f4;
+  border-radius: 5px;
+  height: 25px;
+}
+
+#button:hover {
+  background-color:#4286f4;
+  color: white;
 }

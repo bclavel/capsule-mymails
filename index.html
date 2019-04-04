@@ -26,12 +26,19 @@
         <p id='intro-counter-texte' class='texte-counter'>Nombre total de messages</p>
         <div id='calcul-counter-texte' class='figure-counter bold'></div>
       </div>
+      <div class='form'>
+        <div id='fields'>
+          <input label='Votre nom' type="text" name="message" value="" placeholder="Votre nom" id='name-field'>
+          <input label='Votre message' type="text" name="message" value="" placeholder="Votre message" id='message-field'>
+        </div>
+        <input type="button" value="Ajouter" id="button">
+      </div>
       <div id='main-messages'>
         <div class='box' id='noelContent'>
           <img class='avatar' src="./assets/avatar-1.jpg" alt="Noël Paganelli icon">
           <div>
-            <h6 id='noel'>Noël Paganelli test benoit</h6>
-            <p class='texte-box'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h6 id='noel'>Noël Paganelli</h6>
+            <p class='texte-box' id='targetMessage'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div>
             <img class='add' src="./assets/add.png" alt="add icon">
