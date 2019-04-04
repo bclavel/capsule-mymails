@@ -1,4 +1,4 @@
-// Bienvenue dans le script MyMails
+// Bienvenue dans le script MyMails by @bclavel
 
 // Définit le compteur de messages
 var totalMessages = document.getElementsByClassName('box').length;
@@ -49,11 +49,10 @@ function () {
 
 // Récupère le contenu du bloc de référence à duppliquer
 var contenuNoel = document.getElementById('noelContent').innerHTML;
-console.log(contenuNoel)
 
 // Créer un nouveau bloc de contenu avec le contenu duppliqué
 function newContent() {
-  var contenuNoel = document.getElementById('noelContent').innerHTML;
+  // var contenuNoel = document.getElementById('noelContent').innerHTML;
   document.getElementById('main-messages').prepend(document.createElement('div'));
   document.getElementById('main-messages').firstChild.classList.add('box');
   document.getElementById('main-messages').firstChild.classList.add('newMessage');
