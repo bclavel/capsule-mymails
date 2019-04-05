@@ -14,7 +14,7 @@ function updateTrash() {
   for(var i=0; i<document.getElementsByClassName('trash').length; i++) {
     document.getElementsByClassName('trash')[i].addEventListener("click",
      function(){
-       this.parentNode.parentNode.remove();
+       // this.parentNode.parentNode.remove();
        totalMessages = document.getElementsByClassName('box').length
        updateCounter()
      }
@@ -40,6 +40,13 @@ function () {
   updateMessage()
   updateCounter()
   updateTrash()
+  $('.trash').click(
+    function() {
+      console.log('click!')
+      console.log(this)
+      $(this).parent().parent().delay(100).fadeOut()
+    }
+  );
   }
 );
 
@@ -62,5 +69,21 @@ document.getElementById('new').addEventListener("click",
     totalMessages = document.getElementsByClassName('box').length;
     updateCounter()
     updateTrash()
+    $('.trash').click(
+      function() {
+        console.log('click!')
+        console.log(this)
+        $(this).parent().parent().delay(100).fadeOut()
+      }
+    );
+  }
+);
+
+// Supprimer les box au clic sur la poubelle
+$('.trash').click(
+  function() {
+    console.log('click!')
+    console.log(this)
+    $(this).parent().parent().delay(100).fadeOut()
   }
 );
